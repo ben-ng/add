@@ -36,3 +36,4 @@ test('accumulate', function (t) {
 
   t.equal(algorithm([0]), 0, 'Rump-Ogita-Oishi summation of zero array')
 })
+

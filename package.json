@@ -1,7 +1,7 @@
 {
   "name": "add",
-  "version": "2.0.2",
-  "description": "A numerically stable algorithm to add numbers accurately",
+  "version": "2.0.3",
+  "description": "A cross-browser, numerically stable algorithm to add floats accurately",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
@@ -13,11 +13,15 @@
   "keywords": [
     "numerically",
     "stable",
+    "faithful",
+    "founding",
+    "float",
     "error",
     "propagation",
     "summation",
     "accumulate",
     "addition",
+    "numerical",
     "analysis"
   ],
   "devDependencies": {
@@ -43,3 +47,4 @@
   },
   "homepage": "https://github.com/ben-ng/add"
 }
+

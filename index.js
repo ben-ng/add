@@ -148,3 +148,4 @@ module.exports = accSum
 module.exports.dumbSum = dumbSum
 module.exports.fastTwoSum = fastTwoSum
 module.exports.nextPowerTwo = nextPowerTwo
+

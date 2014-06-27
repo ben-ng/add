@@ -5,9 +5,9 @@
 [![browser support](https://ci.testling.com/ben-ng/add.png)
 ](https://ci.testling.com/ben-ng/add)
 
-A numerically stable way to add floats in Javascript. Produces a faithful rounding of the sum (the result is an immediate floating-point neighbor of the true value).
+A cross-browser, numerically stable way to add floats in Javascript. Produces a faithful rounding of the sum (the result is an immediate floating-point neighbor of the true value).
 
-Algorithm by RUMP-OGITA-OISHI
+Algorithm: Rump-Ogita-Oishi
 
 ## Usage
 
@@ -44,3 +44,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
