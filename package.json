@@ -21,7 +21,7 @@
     "analysis"
   ],
   "devDependencies": {
-    "tape": "^2.13.3"
+    "tape": "2.x.x"
   },
   "testling": {
     "files": "test.js",
