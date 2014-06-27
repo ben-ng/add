@@ -20,6 +20,22 @@
     "addition",
     "analysis"
   ],
+  "devDependencies": {
+    "tape": "^2.13.3"
+  },
+  "testling": {
+    "files": "test.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
   "author": "Ben Ng <me@benng.me>",
   "license": "MIT",
   "bugs": {
