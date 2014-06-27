@@ -1,6 +1,6 @@
 {
   "name": "add",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A numerically stable algorithm to add numbers accurately",
   "main": "index.js",
   "scripts": {
