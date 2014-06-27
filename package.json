@@ -1,0 +1,29 @@
+{
+  "name": "add",
+  "version": "2.0.0",
+  "description": "A numerically stable algorithm to add numbers accurately",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ben-ng/add.git"
+  },
+  "keywords": [
+    "numerically",
+    "stable",
+    "error",
+    "propagation",
+    "summation",
+    "accumulate",
+    "addition",
+    "analysis"
+  ],
+  "author": "Ben Ng <me@benng.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ben-ng/add/issues"
+  },
+  "homepage": "https://github.com/ben-ng/add"
+}
