@@ -129,12 +129,22 @@ function transform (p) {
   return res
 }
 
+function dumbSum(p) {
+  var i, ii, sum = 0.0
+  for(i=0, ii=p.length; i<ii; ++i) {
+    sum += p[i]
+  }
+  return sum
+}
+
 function accSum(p) {
   var tfmd = transform(p)
 
-  return tfmd[0] + (tfmd[1] + tfmd[2].reduce(function (a,b){return a+b}))
+  return tfmd[0] + (tfmd[1] +dumbSum(tfmd[2]))
 }
 
 module.exports = accSum
+
+module.exports.dumbSum = dumbSum
 module.exports.fastTwoSum = fastTwoSum
 module.exports.nextPowerTwo = nextPowerTwo

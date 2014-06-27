@@ -26,15 +26,11 @@ test('nextPowerTwo', function (t) {
 test('accumulate', function (t) {
   t.plan(4)
 
-  var i, ii, stupidAccumulate = 0
 
   t.equal(algorithm([1,2,3,4]), 10, 'Integer sum should work')
 
-  for(i=0, ii=badVector.length; i<ii; ++i) {
-    stupidAccumulate += badVector[i]
-  }
 
-  t.equal(stupidAccumulate, 15.299999999999999, 'Inaccurate summation using naive method')
+  t.equal(algorithm.dumbSum(badVector), 15.299999999999999, 'Inaccurate summation using naive method')
 
   t.equal(algorithm(badVector), 15.3, 'Rump-Ogita-Oishi summation of insidious sum')
 
