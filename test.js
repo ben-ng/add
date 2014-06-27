@@ -3,7 +3,6 @@
 */
 var algorithm = require('./')
   , test = require('tape')
-  , stupidAccumulate = function (a, b) { return a + b }
   , badVector
 
 badVector = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7]
@@ -27,9 +26,15 @@ test('nextPowerTwo', function (t) {
 test('accumulate', function (t) {
   t.plan(4)
 
+  var i, ii, stupidAccumulate = 0
+
   t.equal(algorithm([1,2,3,4]), 10, 'Integer sum should work')
 
-  t.equal(badVector.reduce(stupidAccumulate), 15.299999999999999, 'Inaccurate summation using naive method')
+  for(i=0, ii=badVector.length; i<ii; ++i) {
+    stupidAccumulate += badVector[i]
+  }
+
+  t.equal(stupidAccumulate, 15.299999999999999, 'Inaccurate summation using naive method')
 
   t.equal(algorithm(badVector), 15.3, 'Rump-Ogita-Oishi summation of insidious sum')
 
