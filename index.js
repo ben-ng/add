@@ -138,6 +138,12 @@ function dumbSum(p) {
 }
 
 function accSum(p) {
+
+  // Zero length array, or all values are zeros
+  if(p.length === 0 || maxAbs(p) === 0) {
+    return 0
+  }
+
   var tfmd = transform(p)
 
   return tfmd[0] + (tfmd[1] +dumbSum(tfmd[2]))
