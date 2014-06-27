@@ -1,5 +1,7 @@
 # Add
 
+[![Build Status](https://travis-ci.org/ben-ng/add.svg?branch=master)](https://travis-ci.org/ben-ng/add)
+
 A numerically stable way to add floats in Javascript. Produces a faithful rounding of the sum (the result is an immediate floating-point neighbor of the true value).
 
 Algorithm by RUMP-OGITA-OISHI
