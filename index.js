@@ -92,14 +92,16 @@ function transform (p) {
     , temp
     , bigPow
     , limitA
+    , twoToTheM
 
   if(mu === 0) {
     return [0, 0, p, 0]
   }
 
   M = nextPowerTwo(p.length + 2)
-  bigPow = Math.pow(2, 2 * M)
-  sigmaPrime = Math.pow(2, M) * nextPowerTwo(mu)
+  twoToTheM = Math.pow(2, M)
+  bigPow = 2 * twoToTheM // equiv to Math.pow(2, 2 * M), faster
+  sigmaPrime = twoToTheM * nextPowerTwo(mu)
   tPrime = 0
 
   do {
@@ -115,7 +117,7 @@ function transform (p) {
     }
 
     temp = Epsilon * sigma
-    sigmaPrime = Math.pow(2, M) * temp
+    sigmaPrime = twoToTheM * temp
     limitA = bigPow * temp
   }
   while( Math.abs(tPrime) < limitA && sigma > limitB )
