@@ -36,8 +36,7 @@
       "safari/latest",
       "opera/11.0..latest",
       "iphone/6",
-      "ipad/6",
-      "android-browser/latest"
+      "ipad/6"
     ]
   },
   "author": "Ben Ng <me@benng.me>",
