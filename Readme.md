@@ -21,6 +21,22 @@ console.log(evil.reduce(dumbsum)) => 15.299999999999999
 console.log(add(evil)) => 15.3
 ```
 
+## Performance
+
+The performance benchmark tesll you how much slower `add` is compared to dumb addition. Run it using:
+
+```bash
+$ npm run benchmark
+```
+
+Here are some results (OS X 10.9.4, 2 GHz Core i7, 8GB DDR3 1600Mhz RAM):
+
+```bash
+add x 1,506,573 ops/sec ±1.40% (98 runs sampled)
+native x 25,749,229 ops/sec ±3.91% (84 runs sampled)
+Native is ~17.1 times faster
+```
+
 ## License
 
 The MIT License (MIT)
