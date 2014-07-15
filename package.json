@@ -4,7 +4,8 @@
   "description": "A cross-browser, numerically stable algorithm to add floats accurately",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "benchmark": "node benchmark.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,8 @@
     "analysis"
   ],
   "devDependencies": {
-    "tape": "2.x.x"
+    "tape": "2.x.x",
+    "benchmark": "~1.0.0"
   },
   "testling": {
     "files": "test.js",

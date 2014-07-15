@@ -31,6 +31,7 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test.js"
+    "test.js",
+    "benchmark.js"
   ]
 }
