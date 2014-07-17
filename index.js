@@ -155,7 +155,8 @@
     return sum
   }
 
-  function accSum(p) {
+  function accSum() {
+    var p = arguments;
 
     // Zero length array, or all values are zeros
     if(p.length === 0 || maxAbs(p) === 0) {

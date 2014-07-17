@@ -27,15 +27,15 @@ test('accumulate', function (t) {
   t.plan(5)
 
 
-  t.equal(algorithm([1,2,3,4]), 10, 'Integer sum should work')
+  t.equal(algorithm(1,2,3,4), 10, 'Integer sum should work')
 
 
   t.equal(algorithm.dumbSum(badVector), 15.299999999999999, 'Inaccurate summation using naive method')
 
-  t.equal(algorithm(badVector), 15.3, 'Rump-Ogita-Oishi summation of insidious sum')
+  t.equal(algorithm.apply(null, badVector), 15.3, 'Rump-Ogita-Oishi summation of insidious sum')
 
-  t.equal(algorithm([0, 0, 0]), 0, 'Rump-Ogita-Oishi summation of zero array')
+  t.equal(algorithm(0, 0, 0), 0, 'Rump-Ogita-Oishi summation of zero array')
 
-  t.equal(algorithm([]), 0, 'Rump-Ogita-Oishi summation of empty array')
+  t.equal(algorithm(), 0, 'Rump-Ogita-Oishi summation of empty array')
 })
 

@@ -8,7 +8,8 @@ var testData = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3,
 var addCustom = require('./');
 
 
-var addNative = function(p) {
+var addNative = function() {
+  var p = arguments;
   var result = 0;
   for (var i=0; i<testData.length; ++i) {
     result += testData[i];
@@ -21,12 +22,12 @@ var addNative = function(p) {
 // add tests
 new Benchmark.Suite().add('add-precise', {
   fn: function() {
-    return addCustom(testData);
+    return addCustom.apply(testData);
   }
 })
 .add('add-dumb', {
   fn: function() {
-    return addNative(testData);
+    return addNative.apply(testData);
   }
 })
 .add('native', {

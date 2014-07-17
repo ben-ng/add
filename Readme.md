@@ -18,7 +18,7 @@ var add = require('add')
 
 console.log(evil.reduce(dumbsum)) => 15.299999999999999
 
-console.log(add(evil)) => 15.3
+console.log(add.apply(null, evil)) => 15.3
 ```
 
 ## Performance
@@ -32,10 +32,10 @@ $ npm run benchmark
 Here are some results (OS X 10.9.4, 2 GHz Core i7, 8GB DDR3 1600Mhz RAM):
 
 ```bash
-add-precise x 1,400,712 ops/sec ±3.31% (89 runs sampled)
-add-dumb x 24,268,034 ops/sec ±3.96% (80 runs sampled)
-native x 94,957,251 ops/sec ±2.94% (85 runs sampled)
-native is ~67.8 times faster than add-precise
+add-precise x 13,043,885 ops/sec ±2.90% (91 runs sampled)
+add-dumb x 11,763,414 ops/sec ±1.89% (92 runs sampled)
+native x 91,023,425 ops/sec ±3.52% (84 runs sampled)
+native is ~7.0 times faster than add-precise
 ```
 
 ## License
