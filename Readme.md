@@ -32,9 +32,10 @@ $ npm run benchmark
 Here are some results (OS X 10.9.4, 2 GHz Core i7, 8GB DDR3 1600Mhz RAM):
 
 ```bash
-add x 1,506,573 ops/sec ±1.40% (98 runs sampled)
-native x 25,749,229 ops/sec ±3.91% (84 runs sampled)
-Native is ~17.1 times faster
+add-precise x 1,400,712 ops/sec ±3.31% (89 runs sampled)
+add-dumb x 24,268,034 ops/sec ±3.96% (80 runs sampled)
+native x 94,957,251 ops/sec ±2.94% (85 runs sampled)
+native is ~67.8 times faster than add-precise
 ```
 
 ## License
