@@ -29,13 +29,13 @@ The performance benchmark tesll you how much slower `add` is compared to dumb ad
 $ npm run benchmark
 ```
 
-Here are some results (OS X 10.9.4, 2 GHz Core i7, 8GB DDR3 1600Mhz RAM):
+Here are some results (Arch Linux, 5.2 GHz Core i9, 32GB LPDDR5 4800MT/s RAM):
 
 ```bash
-add-precise x 1,400,712 ops/sec ±3.31% (89 runs sampled)
-add-dumb x 24,268,034 ops/sec ±3.96% (80 runs sampled)
-native x 94,957,251 ops/sec ±2.94% (85 runs sampled)
-native is ~67.8 times faster than add-precise
+add-precise x 20,809,997 ops/sec ±1.04% (91 runs sampled)
+add-dumb x 62,114,333 ops/sec ±0.37% (99 runs sampled)
+native x 221,208,610 ops/sec ±0.35% (102 runs sampled)
+native is ~10.6 times faster than add-precise
 ```
 
 ## License

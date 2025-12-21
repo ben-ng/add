@@ -97,7 +97,6 @@
 
   function transform (p) {
     var mu = maxAbs(p)
-      , M
       , sigmaPrime
       , tPrime
       , t
@@ -116,8 +115,7 @@
       return [0, 0, p, 0]
     }
 
-    M = nextPowerTwo(p.length + 2)
-    twoToTheM = Math.pow(2, M)
+    twoToTheM = nextPowerTwo(p.length + 2)
     bigPow = 2 * twoToTheM // equiv to Math.pow(2, 2 * M), faster
     sigmaPrime = twoToTheM * nextPowerTwo(mu)
     tPrime = 0
