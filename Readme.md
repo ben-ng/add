@@ -1,9 +1,6 @@
 # Add
 
-[![Build Status](https://travis-ci.org/ben-ng/add.svg?branch=master)](https://travis-ci.org/ben-ng/add)
-
-[![browser support](https://ci.testling.com/ben-ng/add.png)
-](https://ci.testling.com/ben-ng/add)
+[![Test](https://github.com/ben-ng/add/actions/workflows/test.yml/badge.svg)](https://github.com/ben-ng/add/actions/workflows/test.yml)
 
 A cross-browser, numerically stable way to add floats in Javascript. Produces a faithful rounding of the sum (the result is an immediate floating-point neighbor of the true value).
 
