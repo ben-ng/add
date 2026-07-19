@@ -24,7 +24,7 @@ test('nextPowerTwo', function (t) {
 })
 
 test('accumulate', function (t) {
-  t.plan(5)
+  t.plan(7)
 
 
   t.equal(algorithm([1,2,3,4]), 10, 'Integer sum should work')
@@ -37,5 +37,14 @@ test('accumulate', function (t) {
   t.equal(algorithm([0, 0, 0]), 0, 'Rump-Ogita-Oishi summation of zero array')
 
   t.equal(algorithm([]), 0, 'Rump-Ogita-Oishi summation of empty array')
+
+  // Regression test: arrays long enough to push nextPowerTwo(p.length + 2)
+  // past ~30 used to overflow the sigma scaling factor and recurse forever
+  t.equal(algorithm(badVector.concat(badVector)), 30.6, 'Rump-Ogita-Oishi summation of a longer insidious sum should not blow the stack')
+
+  var sequential = []
+  for (var i = 1; i <= 1000; ++i) sequential.push(i)
+
+  t.equal(algorithm(sequential), 500500, 'Rump-Ogita-Oishi summation of a large array should not blow the stack')
 })
 
