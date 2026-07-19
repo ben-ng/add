@@ -88,7 +88,7 @@
 
     for(; i<ii; ++i) {
       if(Math.abs(arr[i]) > best) {
-        best = arr[i]
+        best = Math.abs(arr[i])
       }
     }
 
