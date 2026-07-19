@@ -1,6 +1,7 @@
 # Add
 
 [![Test](https://github.com/ben-ng/add/actions/workflows/test.yml/badge.svg)](https://github.com/ben-ng/add/actions/workflows/test.yml)
+[![npm downloads](https://img.shields.io/npm/dm/add)](https://www.npmjs.com/package/add)
 
 A cross-browser, numerically stable way to add floats in Javascript. Produces a faithful rounding of the sum (the result is an immediate floating-point neighbor of the true value).
 
