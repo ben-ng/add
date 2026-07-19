@@ -48,3 +48,14 @@ test('accumulate', function (t) {
   t.equal(algorithm(sequential), 500500, 'Rump-Ogita-Oishi summation of a large array should not blow the stack')
 })
 
+test('accumulate negative vectors', function (t) {
+  t.plan(2)
+
+  t.equal(algorithm([-1e16, -1, -1])
+        , -10000000000000002
+        , 'Should preserve negative low-order terms')
+
+  t.equal(algorithm([-1e16, 1, 1])
+        , -9999999999999998
+        , 'Should preserve positive low-order terms after a negative maximum')
+})
